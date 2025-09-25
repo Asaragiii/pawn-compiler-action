@@ -1,2 +1,9 @@
-- name: Pawn Compiler Action
+- name: Compile with custom settings
+  id: pawn-compile
   uses: knryuu/pawn-compiler-action@v1
+  with:
+    input: filterscripts/anticheat.pwn
+    output: filterscripts/anticheat.amx
+    flags: '-\\;+ -\\(+ -d3'
+    includes: 'pawno/include my-includes'
+    source_url: 'https://github.com/pawn-lang/compiler'
