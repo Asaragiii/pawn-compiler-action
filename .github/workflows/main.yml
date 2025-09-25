@@ -1,0 +1,2 @@
+- name: Pawn Compiler Action
+  uses: knryuu/pawn-compiler-action@v1
